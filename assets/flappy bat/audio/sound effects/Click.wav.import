@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctfk4u4j5dt5h"
+path="res://.godot/imported/Click.wav-5da0499e3e34a52685e9dbe50a6126c3.sample"
+
+[deps]
+
+source_file="res://assets/flappy bat/audio/sound effects/Click.wav"
+dest_files=["res://.godot/imported/Click.wav-5da0499e3e34a52685e9dbe50a6126c3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

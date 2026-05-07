@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://ubvjskvlban8"]
+
+[ext_resource type="Script" uid="uid://bqg00g1fne8dh" path="res://scripts/game_over_screen.gd" id="1_iwahs"]
+[ext_resource type="Texture2D" uid="uid://btl8puikdruya" path="res://assets/textures/gameover.png" id="2_61w2s"]
+[ext_resource type="FontFile" uid="uid://c6skb7gsmpno7" path="res://assets/fonts/flappyfont.TTF" id="3_jw6e5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wa2qn"]
+font = ExtResource("3_jw6e5")
+font_size = 48
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameOverScreen" type="Control" unique_id=1002959389]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iwahs")
+
+[node name="Panel" type="Panel" parent="." unique_id=235990260]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -216.0
+offset_right = 178.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOver" type="TextureRect" parent="Panel" unique_id=1305331538]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.0
+offset_top = 44.0
+offset_right = 144.0
+offset_bottom = 107.0
+grow_horizontal = 2
+texture = ExtResource("2_61w2s")
+
+[node name="ScoreLabel" type="Label" parent="Panel" unique_id=1036657770]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.0
+offset_top = -67.5
+offset_right = 127.0
+offset_bottom = -18.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "SCORE: 999"
+label_settings = SubResource("LabelSettings_wa2qn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScoreLabel" type="Label" parent="Panel" unique_id=269424648]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.0
+offset_top = -3.5
+offset_right = 127.0
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BEST: 999"
+label_settings = SubResource("LabelSettings_wa2qn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RetryButton" type="Button" parent="Panel" unique_id=1490581434]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = 67.5
+offset_right = 102.0
+offset_bottom = 138.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_jw6e5")
+theme_override_font_sizes/font_size = 48
+text = "RETRY"
+
+[connection signal="pressed" from="Panel/RetryButton" to="." method="_on_retry_button_pressed"]

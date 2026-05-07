@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bpp0u7c8c3mht"]
+
+[ext_resource type="Script" uid="uid://cqcgajgkgam6b" path="res://scripts/hud.gd" id="1_ahhtf"]
+[ext_resource type="FontFile" uid="uid://c6skb7gsmpno7" path="res://assets/fonts/flappyfont.TTF" id="2_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://h3rc0vtluitr" path="res://assets/textures/message.png" id="3_5ysmq"]
+[ext_resource type="PackedScene" uid="uid://ubvjskvlban8" path="res://scenes/game_over_screen.tscn" id="4_6fi6k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ysmq"]
+font = ExtResource("2_oo0fn")
+font_size = 48
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="CanvasLayer" unique_id=1435987739]
+script = ExtResource("1_ahhtf")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=72209030]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 93.0
+grow_horizontal = 2
+text = "999"
+label_settings = SubResource("LabelSettings_5ysmq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartMessage" type="TextureRect" parent="." unique_id=285350749]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = -308.0
+offset_right = 138.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_5ysmq")
+
+[node name="GameOverScreen" parent="." unique_id=1002959389 instance=ExtResource("4_6fi6k")]
+visible = false
+modulate = Color(1, 1, 1, 0)

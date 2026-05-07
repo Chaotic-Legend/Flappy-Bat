@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bbkwi8g1lv4g5"]
+
+[ext_resource type="Script" uid="uid://dr12n7s0ip2vg" path="res://scripts/game.gd" id="1_iywne"]
+[ext_resource type="PackedScene" uid="uid://bpp0u7c8c3mht" path="res://scenes/hud.tscn" id="2_p57ef"]
+[ext_resource type="PackedScene" uid="uid://b8nimb5anw8sy" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://vecp3351bi4q" path="res://scenes/obstacle_spawner.tscn" id="3_iywne"]
+[ext_resource type="PackedScene" uid="uid://bkiw27bj8lqls" path="res://scenes/ground.tscn" id="3_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://bwkevift0a7nj" path="res://assets/flappy bat/sprites/game objects/Background.png" id="3_p57ef"]
+[ext_resource type="Texture2D" uid="uid://djfw5xh80psm1" path="res://assets/flappy bat/sprites/game objects/Foreground.png" id="4_u5sy4"]
+
+[node name="Game" type="Node2D" unique_id=1934530990]
+script = ExtResource("1_iywne")
+
+[node name="HUD" parent="." unique_id=1435987739 instance=ExtResource("2_p57ef")]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1067958329]
+texture = ExtResource("3_p57ef")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Foreground" type="Sprite2D" parent="." unique_id=342141142]
+texture = ExtResource("4_u5sy4")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="ObstacleSpawner" parent="." unique_id=1633209755 instance=ExtResource("3_iywne")]
+position = Vector2(700, 400)
+
+[node name="Ground" parent="." unique_id=514727115 instance=ExtResource("3_lnu2h")]
+position = Vector2(0, 686)
+
+[node name="Player" parent="." unique_id=985140755 instance=ExtResource("2_yqjtg")]
+position = Vector2(77, 391)
+
+[connection signal="died" from="Player" to="." method="_on_player_died"]
+[connection signal="game_started" from="Player" to="." method="_on_player_game_started"]
+[connection signal="scored" from="Player" to="." method="_on_player_scored"]

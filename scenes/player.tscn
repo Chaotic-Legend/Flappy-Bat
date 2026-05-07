@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://b8nimb5anw8sy"]
+
+[ext_resource type="Script" uid="uid://b851nwepf322o" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://ctormc80ib2gl" path="res://assets/flappy bat/animations/Fly.png" id="2_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://d1xsl67cnqmew" path="res://assets/flappy bat/audio/sound effects/Fly.wav" id="3_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://cdfrj5err2noj" path="res://assets/flappy bat/audio/sound effects/Death.wav" id="4_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://ctfk4u4j5dt5h" path="res://assets/flappy bat/audio/sound effects/Click.wav" id="5_tuyoq"]
+
+[sub_resource type="Animation" id="Animation_qhqgy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dqkch"]
+resource_name = "flap"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [2, 1, 0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_g2els"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 1, 0, 1, 2, 1, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qhqgy"]
+_data = {
+&"RESET": SubResource("Animation_qhqgy"),
+&"flap": SubResource("Animation_dqkch"),
+&"idle": SubResource("Animation_g2els")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 17.212563
+
+[node name="Player" type="RigidBody2D" unique_id=985140755]
+gravity_scale = 0.0
+script = ExtResource("1_3vyb7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1583125143]
+libraries/ = SubResource("AnimationLibrary_qhqgy")
+autoplay = &"idle"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=587773198]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_qlg0r")
+hframes = 4
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=726577906]
+scale = Vector2(1, 0.56)
+shape = SubResource("CircleShape2D_g2els")
+
+[node name="FlySound" type="AudioStreamPlayer" parent="." unique_id=1679643900]
+stream = ExtResource("3_qlg0r")
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=1366599988]
+stream = ExtResource("4_qlg0r")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=736596947]
+stream = ExtResource("5_tuyoq")
