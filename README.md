@@ -28,7 +28,21 @@ Reminder on the difference between reference and starting state files:
 
 <ins> Task prompt (ask the Employee) </ins>
 <br>
+We are beginning development of a modern 2D side-scrolling arcade game that emphasizes timing, obstacle avoidance, gravity-based movement, and responsive controls to create an engaging gameplay experience. Your task is to design and implement a complete gameplay system to control a small dark blue bat with red and yellow wings as it navigates through obstacles inside a dark cave environment. The player character, obstacle systems, scrolling terrain, score tracking, UI elements, collision systems, and game states should get organized so that gameplay interactions, movement behavior, scoring events, and state transitions function consistently throughout play. This system should establish the foundations for movement physics, obstacle spawning, collision behavior, score progression, and game-over state management. The game system must prioritize responsiveness, visual clarity, and gameplay consistency by incorporating structured input handling, smooth gravity-based motion, accurate collision detection, looping environment systems, and a stable camera that maintains a clear view of the auto-scrolling gameplay area at all times. The environment must take place inside a dark blue cave containing stalactites, stalagmites, and stone columns, and the terrain should appear as dark blue and purple rocky ground lined with triangular spikes. The completed gameplay system must support the following behaviors:
 
+- The bat sprite remains idle in its starting position and animation.
+- The left mouse button and the Space key control upward flying.
+- Obstacles spawn with randomized vertical positions and spacing.
+- The ground terrain auto-scrolls and repeats throughout gameplay.
+- The score increases by one after passing through the obstacles.
+- Unique sound effects play for flapping, scoring, and collisions.
+- The UI message shows the title, score counter, and how to play.
+- The game-over screen shows the score, high score, and a retry.
+- The game saves and updates the player's highest achieved score.
+- Pressing the R key fully resets the gameplay back to the beginning.
+- Pressing the Escape key allows the user to close the entire game.
+
+Collision systems and obstacle interactions must reliably detect contact between the player character, terrain, and obstacle structures while maintaining responsive gameplay behavior and accurate game-over conditions. Sound systems must trigger flap, scoring, collision, and background music audio cues without delay, ensuring that gameplay feedback remains responsive even during rapid input sequences. Game state management must correctly transition between idle, active gameplay, collision, and retry states while maintaining consistent score tracking, obstacle spawning, and environment scrolling systems. UI systems must clearly display the starting message, score counter, gameplay instructions, current score, best score, retry button, and game-over message while preserving readability and visual consistency throughout play. This structure must remain modular and extensible, supporting future gameplay additions, visual enhancements, additional obstacle variations, expanded UI systems, and gameplay balancing improvements while preserving stable physics behavior, responsive controls, and consistent gameplay progression across all scenarios.
 
 <ins> Which of the following best fits this task? </ins>
 <br>
@@ -124,7 +138,7 @@ This task is a realistic and appropriate assignment for a junior-level developer
 
 16. The obstacles spawn with random vertical positions and spacing.
 - Run the main scene and observe that the top and bottom obstacles spawn at different vertical positions while maintaining equal space.
-- The task prompt requires the top and bottom obstacles to spawn at randomized vertical positions while preserving a consistent gap.
+- The task prompt requires the top and bottom obstacles to spawn at randomized vertical positions while maintaining a consistent gap.
 
 17. The ground terrain continually scrolls and repeats during progression.
 - Run the main scene and observe that the spiked ground repeatedly duplicates and scrolls continuously throughout movement.
