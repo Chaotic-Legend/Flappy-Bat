@@ -12,10 +12,8 @@ signal scored
 
 var started := false
 var is_alive := true
-
 var flap_force := -340.0
 var flap_angular_force := -8.0
-
 var maximum_rotation_up := -30.0
 var maximum_rotation_down := 90.0
 var falling_angular_velocity = 5.0
@@ -29,7 +27,6 @@ func _physics_process(_delta: float) -> void:
 	if rotation_degrees <= maximum_rotation_up:
 		rotation_degrees = maximum_rotation_up
 		angular_velocity = 0.0
-	
 	if linear_velocity.y > 0.0:
 		if rotation_degrees <= maximum_rotation_down:
 			angular_velocity = falling_angular_velocity

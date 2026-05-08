@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkiw27bj8lqls"]
 
 [ext_resource type="Script" uid="uid://36nk826p1bug" path="res://scripts/ground.gd" id="1_pybca"]
-[ext_resource type="Texture2D" uid="uid://d12nwlju8f4ur" path="res://assets/flappy bat/sprites/game objects/Terrain.png" id="2_mi8v4"]
+[ext_resource type="Texture2D" uid="uid://d12nwlju8f4ur" path="res://assets/flappybat/sprites/game objects/Terrain.png" id="2_mi8v4"]
 
 [sub_resource type="Animation" id="Animation_lmksl"]
 length = 0.001
@@ -41,7 +41,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mi8v4"]
-size = Vector2(504, 167)
+size = Vector2(504, 170)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmksl"]
 size = Vector2(480, 2)
@@ -55,14 +55,14 @@ autoplay = &"scroll"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=442589828]
 texture_repeat = 2
-scale = Vector2(1, 4.5)
+scale = Vector2(1, 4.6)
 texture = ExtResource("2_mi8v4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 131, 800, 37)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=997904496]
-position = Vector2(252, 83.5)
+position = Vector2(252, 85)
 shape = SubResource("RectangleShape2D_mi8v4")
 
 [node name="DeathZone" type="Area2D" parent="." unique_id=1656088874]

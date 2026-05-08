@@ -6,7 +6,6 @@ extends Node2D
 
 var score := 0
 var high_score := 0
-
 var save_file_path := "user://save_game.dat"
 
 func _ready() -> void:
@@ -43,3 +42,9 @@ func load_high_score() -> void:
 		var save_data = FileAccess.open(save_file_path, FileAccess.READ)
 		high_score = save_data.get_var()
 		save_data.close()
+		
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+	if event.is_action_pressed("restart"):
+		get_tree().reload_current_scene()
