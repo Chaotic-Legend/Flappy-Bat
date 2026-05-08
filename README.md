@@ -62,7 +62,84 @@ This task is a realistic and appropriate assignment for a junior-level developer
 
 <ins> Rubric Items </ins>
 <br>
+1. The sprites, level background, and game elements all appear sharp.
+- Run the main scene and observe that the sprites, obstacles, level background, and game elements all appear sharp and clear.
+- The task prompt requires that all sprites, obstacles, level background, and game elements remain visually sharp and clear.
 
+2. The player character is a small dark blue bat with red and yellow wings.
+- Run the main scene and observe that the player character appears as a small dark blue bat with red and yellow wings and ears.
+- The task prompt requires that the player character appear as a small dark blue bat with red and yellow wings and ears.
 
+3. The background is a dark blue cave with stalactites and stalagmites.
+- Run the main scene and observe that the game background is a dark blue cave with stalactites, stalagmites, and columns.
+- The task prompt requires that the game environment be a dark blue cave with stalactites, stalagmites, and columns during gameplay.
+
+4. The level ground is a dark blue and purple terrain with rocky spikes.
+- Run the main scene and observe that the ground environment is dark blue and purple, populated with rocky triangular spikes.
+- The task prompt requires that the game environment terrain be dark blue and purple with rocky triangular spikes during gameplay.
+
+5. The player character can collide with the level, ground, and obstacles.
+- Run the main scene and move the player character towards the ground and obstacles to confirm the sprite collides with them.
+- The task prompt requires functional collision bodies for the player character to interact correctly with all level environment elements.
+
+6. The camera displays the player characters as the game auto-scrolls.
+- Run the main scene and move the player characters past the obstacles to confirm that the camera displays the auto-scrolling.
+- The task prompt requires a camera to maintain a consistent view of the auto-scrolling gameplay to display the moving player character.
+
+7. The animations play smoothly and always face the correct direction.
+- Run the main scene and move the player character to observe smooth animation transitions and the correct facing direction.
+- The prompt requires that all character sprite animations play smoothly while facing the correct direction of movement.
+
+8. The gravity physics produces a natural and consistent downward pull.
+- Run the main scene and observe the player character falling to confirm that gravity causes a natural downward acceleration.
+- The prompt requires that the environment's gravity produce realistic falling behavior and a consistent downward pull for the player.
+
+9. The bat sprite can flap its wings upward and fall when input is released.
+- Run the main scene, press the left mouse button or the Space key to make the bat fly upward, then release the input to start falling.
+- The task prompt requires using the left mouse button or the Space key to move upward, and releasing the input makes the player fall.
+
+10. The score counter increases when passing through the obstacles.
+- Run the main scene and move the player character through each obstacle to observe the score counter increase by one.
+- The task prompt requires a scoring system that increments the player's score when the player goes through each obstacle.
+
+11. The game resets from the start when the player presses the R key.
+- Run the main scene, press the R key during gameplay to confirm that the game, sprites, score, and visual elements reset completely.
+- The task prompt requires a full game reset triggered by the R key, restoring all game objects and sprites to their starting conditions.
+
+12. The game closes when pressing the Escape key during gameplay.
+- Run the main scene and press the Escape key during gameplay to confirm that the game application terminates completely.
+- The task prompt requires that the Escape key be assigned to an input action to close the game application during gameplay.
+
+13. The player character remains idle and starts moving after giving input.
+- Run the main scene and observe that the bat remains in its starting position, plays its flying animation, and starts moving after input.
+- The task prompt requires the player character to remain idle before gameplay begins and starts moving after receiving input.
+
+14. There is a starting UI message with the game title and how to play.
+- Run the main scene and observe a starting message displaying the game title, score counter, and gameplay instructions for user input.
+- The task prompt requires a starting UI message that displays the game title, score counter, and a visual on how to start playing.
+
+15. The game includes sound effects for flapping, scoring, and collisions.
+- Run the main scene and observe distinct sound effects when the bat flaps, scores a point, and collides with obstacles or terrain.
+- The task prompt requires unique sound effects for bat flapping, score events, and collision or death interactions during gameplay.
+
+16. The obstacles spawn with random vertical positions and spacing.
+- Run the main scene and observe that the top and bottom obstacles spawn at different vertical positions while maintaining equal space.
+- The task prompt requires the top and bottom obstacles to spawn at randomized vertical positions while preserving a consistent gap.
+
+17. The ground terrain continually scrolls and repeats during progression.
+- Run the main scene and observe that the spiked ground repeatedly duplicates and scrolls continuously throughout movement.
+- The task prompt requires the ground terrain to continuously repeat and scroll to maintain the illusion of forward movement.
+
+18. The game-over screen displays score information and a retry option.
+- Run the main scene, fail by colliding with an obstacle, and observe a game-over screen displaying score values and a retry button.
+- The task prompt requires a game-over interface that displays the current score, best score, game-over message, and a retry button.
+
+19. The game stores and updates the player's highest achieved score.
+- Run the main scene, achieve a higher score than the previous best score, and confirm that the high score updates and saves correctly.
+- The task prompt requires a persistent high score system that saves and updates the player's highest achieved score after gameplay.
+
+20. The background music continues to play when the game starts.
+- Run the main scene and observe that the background music begins playing and loops at the end of the music audio.
+- The task prompt requires implementing looping background music that automatically starts when the game begins.
 <br>
 Godot - https://feather.openai.com/tasks/19178b0e-1cdb-41e6-99dc-6fcc3e642559/stage/prompt_creation - Awaiting response.
