@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pck7xkqk70u0"
-path="res://.godot/imported/Rectangle.png-8ae5f8bcd5d29c2c7ef01d3064f8559f.ctex"
+path="res://.godot/imported/Rectangle.png-aa174a6b4f4fac8380b011d4ddcd8398.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flappy bat/sprites/ui elements/Rectangle.png"
-dest_files=["res://.godot/imported/Rectangle.png-8ae5f8bcd5d29c2c7ef01d3064f8559f.ctex"]
+source_file="res://assets/flappybat/sprites/ui elements/Rectangle.png"
+dest_files=["res://.godot/imported/Rectangle.png-aa174a6b4f4fac8380b011d4ddcd8398.ctex"]
 
 [params]
 

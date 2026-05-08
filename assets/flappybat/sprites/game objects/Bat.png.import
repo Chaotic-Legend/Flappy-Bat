@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3nu7f530qbq3"
-path="res://.godot/imported/Bat.png-28e9416a4b4c86c58aee568a3529d622.ctex"
+path="res://.godot/imported/Bat.png-d9d7752bf454fb2de81ea8c276ce508f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flappy bat/sprites/game objects/Bat.png"
-dest_files=["res://.godot/imported/Bat.png-28e9416a4b4c86c58aee568a3529d622.ctex"]
+source_file="res://assets/flappybat/sprites/game objects/Bat.png"
+dest_files=["res://.godot/imported/Bat.png-d9d7752bf454fb2de81ea8c276ce508f.ctex"]
 
 [params]
 

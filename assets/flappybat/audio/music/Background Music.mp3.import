@@ -3,17 +3,17 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://1jp3xddprsc0"
-path="res://.godot/imported/Background Music.mp3-096fa1e8c8acf1718a05672bd452fa60.mp3str"
+path="res://.godot/imported/Background Music.mp3-69acbc36bc2bb213fc9e0b13b5ba56c1.mp3str"
 
 [deps]
 
-source_file="res://assets/flappy bat/audio/music/Background Music.mp3"
-dest_files=["res://.godot/imported/Background Music.mp3-096fa1e8c8acf1718a05672bd452fa60.mp3str"]
+source_file="res://assets/flappybat/audio/music/Background Music.mp3"
+dest_files=["res://.godot/imported/Background Music.mp3-69acbc36bc2bb213fc9e0b13b5ba56c1.mp3str"]
 
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

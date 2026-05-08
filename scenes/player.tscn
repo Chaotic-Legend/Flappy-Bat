@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b8nimb5anw8sy"]
 
 [ext_resource type="Script" uid="uid://b851nwepf322o" path="res://scripts/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://ctormc80ib2gl" path="res://assets/flappy bat/animations/Fly.png" id="2_qlg0r"]
-[ext_resource type="AudioStream" uid="uid://d1xsl67cnqmew" path="res://assets/flappy bat/audio/sound effects/Fly.wav" id="3_qlg0r"]
-[ext_resource type="AudioStream" uid="uid://cdfrj5err2noj" path="res://assets/flappy bat/audio/sound effects/Death.wav" id="4_qlg0r"]
-[ext_resource type="AudioStream" uid="uid://ctfk4u4j5dt5h" path="res://assets/flappy bat/audio/sound effects/Click.wav" id="5_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://ctormc80ib2gl" path="res://assets/flappybat/animations/Fly.png" id="2_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://d1xsl67cnqmew" path="res://assets/flappybat/audio/sound effects/Fly.wav" id="3_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://cdfrj5err2noj" path="res://assets/flappybat/audio/sound effects/Death.wav" id="4_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://ctfk4u4j5dt5h" path="res://assets/flappybat/audio/sound effects/Click.wav" id="5_tuyoq"]
 
 [sub_resource type="Animation" id="Animation_qhqgy"]
 length = 0.001
@@ -100,7 +100,6 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
-radius = 17.212563
 
 [node name="Player" type="RigidBody2D" unique_id=985140755]
 gravity_scale = 0.0
@@ -111,20 +110,28 @@ libraries/ = SubResource("AnimationLibrary_qhqgy")
 autoplay = &"idle"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=587773198]
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.3, 1.3)
 texture = ExtResource("2_qlg0r")
 hframes = 4
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=726577906]
-scale = Vector2(1, 0.56)
+position = Vector2(3, 4)
+scale = Vector2(1, 0.6)
 shape = SubResource("CircleShape2D_g2els")
 
 [node name="FlySound" type="AudioStreamPlayer" parent="." unique_id=1679643900]
 stream = ExtResource("3_qlg0r")
+volume_db = -3.0
+max_polyphony = 8
+bus = &"SFX"
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=1366599988]
 stream = ExtResource("4_qlg0r")
+volume_db = -2.0
+bus = &"SFX"
 
 [node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=736596947]
 stream = ExtResource("5_tuyoq")
+volume_db = -2.0
+bus = &"SFX"

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d1xsl67cnqmew"
-path="res://.godot/imported/Fly.wav-13e3902326222d497626cf6aa0b21f0c.sample"
+path="res://.godot/imported/Fly.wav-238a9c4476ec7cfa40a6e1e7781f3093.sample"
 
 [deps]
 
-source_file="res://assets/flappy bat/audio/sound effects/Fly.wav"
-dest_files=["res://.godot/imported/Fly.wav-13e3902326222d497626cf6aa0b21f0c.sample"]
+source_file="res://assets/flappybat/audio/sound effects/Fly.wav"
+dest_files=["res://.godot/imported/Fly.wav-238a9c4476ec7cfa40a6e1e7781f3093.sample"]
 
 [params]
 

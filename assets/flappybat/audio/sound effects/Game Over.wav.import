@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b1ehafho4li3e"
-path="res://.godot/imported/Game Over.wav-d5e1d7bf3ed64bed7b557bb99efa5dc2.sample"
+path="res://.godot/imported/Game Over.wav-130904da3c72f5565385d1416b215d34.sample"
 
 [deps]
 
-source_file="res://assets/flappy bat/audio/sound effects/Game Over.wav"
-dest_files=["res://.godot/imported/Game Over.wav-d5e1d7bf3ed64bed7b557bb99efa5dc2.sample"]
+source_file="res://assets/flappybat/audio/sound effects/Game Over.wav"
+dest_files=["res://.godot/imported/Game Over.wav-130904da3c72f5565385d1416b215d34.sample"]
 
 [params]
 

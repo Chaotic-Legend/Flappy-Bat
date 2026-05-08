@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djfw5xh80psm1"
-path="res://.godot/imported/Foreground.png-3cc0ebf227694011ffb98df5cc0038cb.ctex"
+path="res://.godot/imported/Foreground.png-b697cd6626841b649e84440b63b09eb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flappy bat/sprites/game objects/Foreground.png"
-dest_files=["res://.godot/imported/Foreground.png-3cc0ebf227694011ffb98df5cc0038cb.ctex"]
+source_file="res://assets/flappybat/sprites/game objects/Foreground.png"
+dest_files=["res://.godot/imported/Foreground.png-b697cd6626841b649e84440b63b09eb0.ctex"]
 
 [params]
 

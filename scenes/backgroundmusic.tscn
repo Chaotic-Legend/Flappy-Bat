@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cdwg8cpfn0qw"]
+
+[ext_resource type="AudioStream" uid="uid://1jp3xddprsc0" path="res://assets/flappybat/audio/music/Background Music.mp3" id="1_dd3px"]
+
+[node name="Background Music" type="AudioStreamPlayer2D" unique_id=488642674]
+stream = ExtResource("1_dd3px")
+autoplay = true
+bus = &"Music"

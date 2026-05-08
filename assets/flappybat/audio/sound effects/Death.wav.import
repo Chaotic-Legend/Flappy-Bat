@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cdfrj5err2noj"
-path="res://.godot/imported/Death.wav-4e17ca50b807a634b02f47ece9d93b8d.sample"
+path="res://.godot/imported/Death.wav-92b5b69aef57f0b0deb3c927f178aa1f.sample"
 
 [deps]
 
-source_file="res://assets/flappy bat/audio/sound effects/Death.wav"
-dest_files=["res://.godot/imported/Death.wav-4e17ca50b807a634b02f47ece9d93b8d.sample"]
+source_file="res://assets/flappybat/audio/sound effects/Death.wav"
+dest_files=["res://.godot/imported/Death.wav-92b5b69aef57f0b0deb3c927f178aa1f.sample"]
 
 [params]
 

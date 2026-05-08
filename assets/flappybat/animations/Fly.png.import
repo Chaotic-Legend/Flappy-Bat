@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctormc80ib2gl"
-path="res://.godot/imported/Fly.png-99ae418d10e8440a9d345164fbddf834.ctex"
+path="res://.godot/imported/Fly.png-d8841aaabb6001f37007224fa8382223.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flappy bat/animations/Fly.png"
-dest_files=["res://.godot/imported/Fly.png-99ae418d10e8440a9d345164fbddf834.ctex"]
+source_file="res://assets/flappybat/animations/Fly.png"
+dest_files=["res://.godot/imported/Fly.png-d8841aaabb6001f37007224fa8382223.ctex"]
 
 [params]
 
