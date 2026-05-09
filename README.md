@@ -50,7 +50,7 @@ Task from scratch
 
 <ins> How long would you anticipate an 'Employee' to complete this task? (in hours) </ins>
 <br>
-4
+5
 
 ### **Starting state** ###
 Please describe and include below any information about the starting state of this project:
@@ -63,7 +63,7 @@ Reminder on the difference between the starting state and the reference files:
 
 <ins> Starting state description </ins>
 <br>
-The starting state file will begin with a newly created 2D Godot project with no implemented gameplay systems, scenes, scripts, scoring systems, or gameplay mechanics beyond the default engine setup. The only required files are a collection of visual and audio assets intended solely to support the development of a side-scrolling arcade-style game focused on controlling a flying bat character through obstacle sequences while avoiding collisions. These assets include animated bat sprites for flight and death states, scrolling background and ground textures, obstacle sprites, interface graphics for menus and game over states, a custom font for score displays, background music, and several sound effects for player actions, scoring, collisions, and game states. The Employee is responsible for designing and implementing the complete game from the ground up using the provided assets, including all required scenes, nodes, scripts, collision systems, obstacle spawning logic, player movement and gravity behavior, score tracking, scrolling environments, animation playback, UI systems, audio integration, restart functionality, and complete game flow management. All gameplay programming, physics interactions, and scene organization must be fully created and integrated by the Employee using the supplied resources as the foundation for the finished gameplay experience.
+The starting state files begin with an empty 2D project containing no gameplay systems, scenes, scripts, scoring systems, or gameplay mechanics beyond the default engine setup. The only required files are a collection of visual and audio assets intended solely to support the development of a side-scrolling arcade-style game focused on controlling a flying bat character through obstacle sequences while avoiding collisions. These assets include animated bat sprites for flight and death states, scrolling background and ground textures, obstacle sprites, interface graphics for menus and game over states, a custom font for score displays, background music, and several sound effects for player actions, scoring, collisions, and game states. The Employee is responsible for designing and implementing the complete game from the ground up using the provided assets, including all required scenes, nodes, scripts, collision systems, obstacle spawning logic, player movement and gravity behavior, score tracking, scrolling environments, animation playback, UI systems, audio integration, restart functionality, and complete game flow management. All gameplay programming, physics interactions, and scene organization must be fully created and integrated by the Employee using the supplied resources as the foundation for the gameplay experience.
 
 ### **Overall context** ###
 Finally, include context on this task and why it is realistic and representative of real-life work:
