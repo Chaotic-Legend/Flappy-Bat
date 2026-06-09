@@ -1,6 +1,5 @@
 extends RigidBody2D
 class_name Player
-
 signal game_started
 signal died
 signal scored
@@ -23,7 +22,6 @@ func _physics_process(_delta: float) -> void:
 		if !started:
 			start_game()
 		flap()
-	
 	if rotation_degrees <= maximum_rotation_up:
 		rotation_degrees = maximum_rotation_up
 		angular_velocity = 0.0

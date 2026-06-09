@@ -5,7 +5,6 @@ var speed := -215.0
 func _physics_process(_delta: float) -> void:
 	velocity.x = speed
 	move_and_slide()
-	
 	if global_position.x < -200.0:
 		queue_free()
 

@@ -11,6 +11,12 @@ font_size = 48
 outline_size = 16
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_6fi6k"]
+font = ExtResource("2_oo0fn")
+font_size = 48
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
 [node name="HUD" type="CanvasLayer" unique_id=1435987739]
 script = ExtResource("1_ahhtf")
 
@@ -23,6 +29,22 @@ text = "999"
 label_settings = SubResource("LabelSettings_5ysmq")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PauseLabel" type="Label" parent="." unique_id=896989965]
+visible = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -24.5
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "PAUSED"
+label_settings = SubResource("LabelSettings_6fi6k")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
 
 [node name="StartMessage" type="TextureRect" parent="." unique_id=285350749]
 anchors_preset = 8

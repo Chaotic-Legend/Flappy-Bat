@@ -8,4 +8,5 @@ func init_screen(score: int, high_score: int) -> void:
 	high_score_label.text = "BEST: " + str(high_score)
 
 func _on_retry_button_pressed() -> void:
+	get_tree().paused = false
 	get_tree().reload_current_scene()
